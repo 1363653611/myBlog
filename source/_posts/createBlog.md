@@ -22,7 +22,14 @@ reward: true
 2. 安装 hexo `npm i -g hexo-cli`
 
 #### 安装 `yilia` 主题的坑
-1. 头像不展示
+1. 头像设置
+  - 在 `source\assets\image` 添加图片
+  - 在 `themes\yilia\_config.yml` 配置头像 和favicon：
+  ```yml
+  favicon: /zbcn.github.io/assets/image/favicon.ico
+  #你的头像url
+  avatar: /zbcn.github.io/assets/image/head.jpg
+  ```
 
 2. 点击 所有文章/友联/关于我 出现 `habout:blank#blocked`页面
   - 解决方案:
@@ -412,3 +419,5 @@ toc: true
 tags: [HTML,前端]
 categories: [前端,HTML]
 ```
+
+#### 添加相册
