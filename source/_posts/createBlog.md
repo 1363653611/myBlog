@@ -26,9 +26,9 @@ reward: true
   - 在 `source\assets\image` 添加图片
   - 在 `themes\yilia\_config.yml` 配置头像 和favicon：
   ```yml
-  favicon: /assets/image/favicon.ico
+  favicon: /zbcn.github.io/assets/image/favicon.ico
   #你的头像url
-  avatar: /assets/image/head.jpg
+  avatar: /zbcn.github.io/assets/image/head.jpg
   ```
   __notify:__ 根目录下的url 配置为博客地址:https://1363653611.github.io/zbcn.github.io, 要配置 `zbcn.github.io`,否则会引发一堆问题
 
