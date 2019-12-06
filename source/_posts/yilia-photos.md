@@ -4,6 +4,8 @@ date: 2019-12-06 09:41:45
 tags:
   - yilia
   - hexo
+categories:
+  - Hexo
 ---
 
 ### 方案
