@@ -32,7 +32,7 @@ tags:
       src += '';
       liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
             <a href="' + src + '" itemprop="contentUrl" data-size="1080x1080" data-type="' + type + '" data-target="' + src + '">\
-              <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
+              <img class="reward-img" data-type="' + type + '" data-src="' + minSrc + '" src="/zbcn.github.io/assets/img/empty.png" itemprop="thumbnail" onload="lzld(this)">\
             </a>\
             <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
         </figure>';
@@ -159,3 +159,7 @@ tags:
         json.dump(final_dict, fp)
      ```
   - 每次图片有改动都需要执行此脚本文件
+
+  #### 脚本执行
+  - 照片放在 `myBlog\blogSrc\blogPhoto\photos` 文件件下
+  - 执行py 脚本 `myBlog\blogSrc\blogPhoto\tool#main` 方法
