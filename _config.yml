@@ -14,8 +14,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://1363653611.github.io/zbcn.github.io
-root: /zbcn.github.io/
+url: https://1363653611.github.io/zbcn.github.io/zbcn.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

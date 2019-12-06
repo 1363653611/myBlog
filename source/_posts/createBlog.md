@@ -26,10 +26,11 @@ reward: true
   - 在 `source\assets\image` 添加图片
   - 在 `themes\yilia\_config.yml` 配置头像 和favicon：
   ```yml
-  favicon: /zbcn.github.io/assets/image/favicon.ico
+  favicon: /assets/image/favicon.ico
   #你的头像url
-  avatar: /zbcn.github.io/assets/image/head.jpg
+  avatar: /assets/image/head.jpg
   ```
+  __notify:__ 根目录下的url 配置为博客地址:https://1363653611.github.io/zbcn.github.io, 要配置 `zbcn.github.io`,否则会引发一堆问题
 
 2. 点击 所有文章/友联/关于我 出现 `habout:blank#blocked`页面
   - 解决方案:
