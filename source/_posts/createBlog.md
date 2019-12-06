@@ -45,7 +45,7 @@ reward: true
             <%}%>
 		</nav>
     ```
-3. 添加 访问量统计
+3. ~添加 访问量统计1~(效果不是很好)
 
   - 添加本站总访问量(引入不蒜子):(pv的方式，单个用户连续点击n篇文章，记录n次访问量。)
   在 `themes/yilia/layout/_partial/footer.ejs` 的末尾 添加
@@ -73,6 +73,45 @@ reward: true
       </span>
     <% } %>
     ```
+4. 访问量统计2:
+
+__网站访问量显示：__
+  - 我使用了不蒜子第三方的统计插件，网址：http://ibruce.info/2015/04/04/busuanzi/
+  - 在`themes\yilia\layout\_partial`下的footer.ejs中加入如下代码即可
+  ```js
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+  <span id="busuanzi_container_site_uv">
+  总访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+  ```
+__实现单篇文章浏览统计和评论统计__
+  - 评论数的统计是__网易云跟帖__中获取的，下面给出
+  - 修改`themes\yilia\layout\_partial`文件夹下的article.ejs文件
+  - 在`<%- partial('post/title', {class_name: 'article-title'}) %>`节点下加入：
+    - 注意这里网易云跟帖还没设置，而评论数中使用到了，这里运行会有问题，下面给出
+    ```js
+    <!-- 显示阅读和评论数 -->
+      <% if (!index && post.comments && config.wangYi){ %>
+      <br/>
+      <a class="cloud-tie-join-count" href="javascript:void(0);"target="_parent" style="color:gray;font-size:14px;">
+      <span class="icon-sort"></span>
+      <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
+                阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+      </span>
+      </a>
+      <a class="cloud-tie-join-count" href="javascript:void(0);" target="_parent" style="color:#ef7522;font-size:14px;">
+      	<span class="icon-comment"></span>
+      	<span class="join-text" style="color:#ef7522;font-size:14px;">评论数:</span>
+      	<span class="join-count">0</span>次
+      </a>
+      <% } %>
+    ```
+#### 实现网易云跟帖评论
+- 注册账号：https://gentie.163.com/info.html
 
 #### 配置置顶文章
 - 安装插件
