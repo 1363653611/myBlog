@@ -2,10 +2,10 @@
 title: Hexo博客新建文章并发布
 date: 2019-12-05 13:14:10
 tags:
- - Hexo
+ - hexo
  - yilia
 categories:
- - Hexo
+ - hexo
 top: 1
 topdeclare: true
 reward: true
@@ -459,4 +459,47 @@ tags: [HTML,前端]
 categories: [前端,HTML]
 ```
 
-#### 添加相册
+#### yilia 主题 翻页报错
+
+原因是 :`themes\yilia\layout\_partial\archive.ejs` 多出了`&laquo;` 和 `&raquo;`  
+解决方案,是在分页的地方删除以上两个标签,如下:
+  ```js
+  //修改前
+  <% if (page.total > 1){ %>
+   <nav id="page-nav">
+     <%- paginator({
+       prev_text: '&laquo; Prev',
+       next_text: 'Next &raquo;'
+     }) %>
+   </nav>
+ <% } %>
+ // 修改后
+ <% if (page.total > 1){ %>
+  <nav id="page-nav">
+    <%- paginator({
+      prev_text: 'Prev',
+      next_text: 'Next'
+    }) %>
+  </nav>
+<% } %>
+ ...
+ //修改前
+ <% if (page.total > 1){ %>
+   <nav id="page-nav">
+     <%- paginator({
+       prev_text: '&laquo; Prev',
+       next_text: 'Next &raquo;'
+     }) %>
+   </nav>
+ <% } %>
+ //修改后
+ <% if (page.total > 1){ %>
+   <nav id="page-nav">
+     <%- paginator({
+       prev_text: 'Prev',
+       next_text: 'Next'
+     }) %>
+   </nav>
+ <% } %>
+
+  ```
