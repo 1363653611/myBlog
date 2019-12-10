@@ -18,6 +18,8 @@ reward: true
   whereis python
   # python: /usr/bin/python /usr/bin/python2.7 /usr/bin/python.bak /usr/lib/python2.7 /usr/lib64/python2.7 /etc/python /usr/include/python2.7 /usr/share/man/man1/python.1.gz
   ```
+<!--more-->
+
 2. 切换至bin 目录
   ```lunix
     cd /bin

@@ -24,6 +24,7 @@ reward: true
 
       make install
       ```
+<!--more-->
     - 如果还报错，在继续安装下其他基础包.
     ```
     yum install make curl curl-devel gcc gcc-c++ gcc-g77 gcc* make zlib-devel bzip2-devel openssl-devel xz-libs wget unzip xz vixie-cron crontabs ntpdate tar lrzsz sysstat bind-utils vim -y

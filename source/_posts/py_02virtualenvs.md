@@ -20,6 +20,7 @@ reward: true
       find / -name 'virtualenv.py'
       --> /usr/local/python3/lib/python3.8/site-packages/virtualenv.py
       ```
+<!--more-->
     2. 然后进入所在目录：
       - 方式1:
         ```
