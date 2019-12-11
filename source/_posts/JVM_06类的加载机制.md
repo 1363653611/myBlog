@@ -6,7 +6,7 @@ tags:
   - java
 categories:
   - JVM
-  - jav
+  - java
 topdeclare: true
 reward: true
 ---
