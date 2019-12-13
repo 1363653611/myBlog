@@ -1,6 +1,6 @@
 ---
 title: 06 类的加载机制
-date: 2019-12-09 18:14:10
+date: 2019-12-10 18:14:10
 tags:
   - JVM
   - java
@@ -17,6 +17,8 @@ reward: true
 
 #### 生命周期：
 - 加载（loading）->验证（verification）->准备（preparation）->解析（resolution）->初始化（initialization）->使用（using）->卸载（unloading）
+
+<!--more-->
 
 #### 需要初始化
 - 遇到new、getstatic、putstatic或者invokestatic这四条字节码指令时
