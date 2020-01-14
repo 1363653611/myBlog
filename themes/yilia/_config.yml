@@ -132,7 +132,7 @@ friends:
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 身在井隅,<br>心想星光.<br>眼里有诗,<br>自在远方.
+aboutme: 身在井隅<br><br> 心想星光<br><br> 眼里有诗<br><br>自在远方
 
 #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明
 #当前应用的版权协议地址。
