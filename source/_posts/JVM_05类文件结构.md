@@ -153,7 +153,7 @@ ClassFile {
 
 ## 访问标志 access flag
 
-![image-20200801121834478](JVM_05类文件结构/image-20200801121834478.png)
+![image-20200801121834478](/zbcn.github.io/assets/postImg/JVM/JVM_05类文件结构/image-20200801121834478.png)
 
 - 2个字节
 - 识别一些类或者接口层次的访问信息
@@ -246,7 +246,7 @@ field_info     fields[fields_count];//一个类会可以有个字段
 - Class 文件存储格式中对方法的描述与对字段的描述几乎采用了完全一致的方式。方法表的结构如同字段表一样，依次包括了访问标志、名称索引、描述符索引、属性表集合几项
 
 - method_info  方法表的结构
-    ![img](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/%E6%96%B9%E6%B3%95%E8%A1%A8%E7%9A%84%E7%BB%93%E6%9E%84.png)
+    ![img](/zbcn.github.io/assets/postImg/JVM/JVM_05类文件结构/方法表的结构.png)
 
     > - 包含的信息
     > 	- 访问标志 access_flag
@@ -258,7 +258,7 @@ field_info     fields[fields_count];//一个类会可以有个字段
     > - 父类方法在子类中没有被重写。则方法表集合中就不会出现父类方法信息
 
 - 方法表的 access_flag 取值：
-![方法表的 access_flag 取值](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/%E6%96%B9%E6%B3%95%E8%A1%A8%E7%9A%84access_flag%E7%9A%84%E6%89%80%E6%9C%89%E6%A0%87%E5%BF%97%E4%BD%8D.png)
+![方法表的 access_flag 取值](/zbcn.github.io/assets/postImg/JVM/JVM_05类文件结构/方法表的access_flag的所有标志位.png)
 
 因为`volatile`修饰符和`transient`修饰符不可以修饰方法，所以方法表的访问标志中没有这两个对应的标志，但是增加了`synchronized`、`native`、`abstract`等关键字修饰方法，所以也就多了这些关键字对应的标志。
 
