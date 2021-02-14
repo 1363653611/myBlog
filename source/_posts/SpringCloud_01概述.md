@@ -5,8 +5,8 @@ tags:
  - springCloud
  - java
 categories:
- - SpringCloud
-#top: 1
+ - springCloud
+top: 1
 topdeclare: true
 reward: true
 ---
@@ -20,7 +20,9 @@ reward: true
         - 智能路由
         - 微代理
         - 控制总线
+        
 <!--more-->
+
   * 特性
 
         - 分布式/版本化配置

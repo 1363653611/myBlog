@@ -32,6 +32,8 @@ SpringCloud为开发人员提供了快速构建分布式系统架构的工具，
 
 ![image-20201205211757470](/zbcn.github.io/assets/postImg/springCloud/springcloud-00spring架构览/image-20201205211757470.png)
 
+<!--more-->
+
 # SpringCloud的版本关系
 
 SpringCloud是一个由许多子项目组成的综合项目，各子项目有不同的发布节奏。 为了管理SpringCloud与各子项目的版本依赖关系，发布了一个清单，其中包括了某个SpringCloud版本对应的子项目版本。 为了避免SpringCloud版本号与子项目版本号混淆，SpringCloud版本采用了名称而非版本号的命名，这些版本的名字采用了伦敦地铁站的名字，根据字母表的顺序来对应版本时间顺序，例如Angel是第一个版本, Brixton是第二个版本。 当SpringCloud的发布内容积累到临界点或者一个重大BUG被解决后，会发布一个"service releases"版本，简称SRX版本，比如Greenwich.SR2就是SpringCloud发布的Greenwich版本的第2个SRX版本。

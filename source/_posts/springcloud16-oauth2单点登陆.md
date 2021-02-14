@@ -17,6 +17,8 @@ Spring Cloud Security 为构建安全的SpringBoot应用提供了一系列解决
 
 单点登录（Single Sign On）指的是当有多个系统需要登录时，用户只需登录一个系统，就可以访问其他需要登录的系统而无需登录。
 
+<!--more-->
+
 # 创建oauth2-client模块
 
 这里我们创建一个oauth2-client服务作为需要登录的客户端服务，使用上一节中的oauth2-jwt-server服务作为认证服务，当我们在oauth2-jwt-server服务上登录以后，就可以直接访问oauth2-client需要登录的接口，来演示下单点登录功能。

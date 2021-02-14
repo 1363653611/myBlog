@@ -17,6 +17,8 @@ Spring Cloud Config 可以为微服务架构中的应用提供集中化的外部
 
 Spring Cloud Config 分为服务端和客户端两个部分。服务端被称为分布式配置中心，它是个独立的应用，可以从配置仓库获取配置信息并提供给客户端使用。客户端可以通过配置中心来获取配置信息，在启动时加载配置。Spring Cloud Config 的配置中心默认采用Git来存储配置信息，所以天然就支持配置信息的版本管理，并且可以使用Git客户端来方便地管理和访问配置信息。
 
+<!--more-->
+
 # 在Git仓库中准备配置信息
 
 由于Spring Cloud Config 需要一个存储配置信息的Git仓库，这里我们先在Git仓库中添加好配置文件再演示其功能。仓库地址：https://github.com/1363653611/config-repo.git

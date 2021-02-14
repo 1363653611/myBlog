@@ -17,6 +17,8 @@ Spring Cloud Security 为构建安全的SpringBoot应用提供了一系列解决
 
 JWT是JSON WEB TOKEN的缩写，它是基于 RFC 7519 标准定义的一种可以安全传输的的JSON对象，由于使用了数字签名，所以是可信任和安全的。
 
+<!--more-->
+
 ## JWT的组成
 
 - JWT token的格式：header.payload.signature；

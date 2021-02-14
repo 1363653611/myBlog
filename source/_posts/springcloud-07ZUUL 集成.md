@@ -23,6 +23,8 @@ reward: true
 - 服务聚合
 - 。。。。
 
+<!--more-->
+
 
 ## 整合方式
 spring-zuul 与eureka 整合

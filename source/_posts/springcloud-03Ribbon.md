@@ -21,6 +21,8 @@ Spring Cloud Ribbon 是Spring Cloud Netflix 子项目的核心组件之一，主
 
 > RestTemplate是一个HTTP客户端，使用它我们可以方便的调用HTTP接口，支持GET、POST、PUT、DELETE等方法。
 
+<!--more-->
+
 ## GET 请求
 
 ```java

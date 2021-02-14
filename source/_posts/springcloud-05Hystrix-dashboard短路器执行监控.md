@@ -21,6 +21,8 @@ Hystrix提供了Hystrix Dashboard来实时监控HystrixCommand方法的执行情
 
 我们先通过使用Hystrix Dashboard监控单个Hystrix实例来了解下它的使用方法。
 
+<!--more-->
+
 ## 创建一个hystrix-dashboard模块
 
 用来监控hystrix实例的执行情况。

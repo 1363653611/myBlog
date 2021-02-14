@@ -25,6 +25,8 @@ Spring Cloud Consul 具有如下特性：
 - 支持分布式配置管理：Consul作为配置中心时，使用键值对来存储配置信息；
 - 支持控制总线：可以在整个微服务系统中通过 Control Bus 分发事件消息。
 
+<!--more-->
+
 # 使用Consul作为注册中心
 
 ## 安装并运行Consul

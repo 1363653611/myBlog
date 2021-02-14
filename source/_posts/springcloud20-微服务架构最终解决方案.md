@@ -23,6 +23,8 @@ reward: true
 - [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](./springcloud17-Ali-nacos.md)
 - [听说你的JWT库用起来特别扭，推荐这款贼好用的！](https://mp.weixin.qq.com/s/Jo3PZoa7nL99c8UCxPiTTA)
 
+<!--more-->
+
 ## 应用架构
 
 > 我们理想的解决方案应该是这样的，认证服务负责认证，网关负责校验认证和鉴权，其他API服务负责处理自己的业务逻辑。安全相关的逻辑只存在于认证服务和网关服务中，其他服务只是单纯地提供服务而没有任何安全相关逻辑。

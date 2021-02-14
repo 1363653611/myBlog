@@ -29,6 +29,8 @@ Spring Boot Admin 可以提供应用的以下监控信息：
 - 查看可以访问的Web端点；
 - 查看HTTP跟踪信息。
 
+<!--more-->
+
 # 创建admin-server模块
 
 这里我们创建一个admin-server模块来作为监控中心演示其功能。

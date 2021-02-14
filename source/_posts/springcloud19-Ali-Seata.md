@@ -22,6 +22,8 @@ Seata是Alibaba开源的一款分布式事务解决方案，致力于提供高�
 
 ![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_05.png)
 
+<!--more-->
+
 ## 微服务应用
 
 随着业务需求的变化，单体应用被拆分成微服务应用，原来的三个模块被拆分成三个独立的应用，分别使用独立的数据源，业务操作需要调用三个服务来完成。此时每个服务内部的数据一致性由本地事务来保证，但是全局的数据一致性问题没法保证。

@@ -17,6 +17,8 @@ Spring Cloud Security 为构建安全的SpringBoot应用提供了一系列解决
 
 OAuth 2.0是用于授权的行业标准协议。OAuth 2.0为简化客户端开发提供了特定的授权流，包括Web应用、桌面应用、移动端应用等。
 
+<!--more-->
+
 ## OAuth2 相关名词解释
 
 - Resource owner（资源拥有者）：拥有该资源的最终用户，他有访问资源的账号密码；
