@@ -42,7 +42,7 @@ struct sdshdr{
 
 ### 链表
 - Redis的链表在双向链表上扩展了头、尾节点、元素数等属性。
-![链表结构](/zbcn.github.io/assets/postImg/redis/imgs/640.png)
+![链表结构](./imgs/640.png)
 
 #### 源码
 - ListNode节点数据结构：
@@ -81,7 +81,7 @@ struct sdshdr{
 
   ### 字典(Hash)
   > Redis的Hash，就是在数组+链表的基础上，进行了一些rehash优化等。
-![hash数据结构](/zbcn.github.io/assets/postImg/redis/imgs/641.png)
+![hash数据结构](imgs/641.png)
 
 #### 数据结构源码
 - hash表
@@ -152,7 +152,7 @@ typedef struct dict {
 ### 跳跃表(ZSET)
 > 这个数据结构是我面试中见过最多的，它其实特别简单。学过的人可能都知道，它和平衡树性能很相似，但为什么不用平衡树而用skipList呢?
 
-![跳表](/zbcn.github.io/assets/postImg/redis/imgs/642.png)
+![跳表](./imgs/642.png)
 
 #### skipList & AVL 之间的选择
 1. 从算法实现难度上来比较，skiplist比平衡树要简单得多。
@@ -261,8 +261,8 @@ typedef struct intset {
 > ziplist是redis为了节约内存而开发的顺序型数据结构。它被用在列表键和哈希键中。一般用于小数据存储。
 
 - 引用https://segmentfault.com/a/1190000016901154中的两个图：
-![压缩列表](/zbcn.github.io/assets/postImg/redis/imgs/644.png)
-![压缩列表2](/zbcn.github.io/assets/postImg/redis/imgs/645.png)
+![压缩列表](./imgs/644.png)
+![压缩列表2](./imgs/645.png)
 
 #### 源码
 > ziplist没有明确定义结构体，这里只作大概的演示。
@@ -309,7 +309,7 @@ typedef struct ziplist{
 ### 快速列表(quicklist)
 > 一个由ziplist组成的双向链表。但是一个quicklist可以有多个quicklist节点，它很像B树的存储方式。是在redis3.2版本中新加的数据结构，用在列表的底层实现。
 
-![快速列表](/zbcn.github.io/assets/postImg/redis/imgs/646.png)
+![快速列表](./imgs/646.png)
 #### 结构体源码
 ```c
 typedef struct quicklist {

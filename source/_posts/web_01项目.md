@@ -2,9 +2,9 @@
 title: web_01 新建web 项目
 date: 2020-10-11 12:14:10
 tags:
-  - WEB
+  - network
 categories:
-  - WEB
+  - network
 topdeclare: true
 reward: true
 ---
