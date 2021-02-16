@@ -9,7 +9,7 @@ topdeclare: true
 reward: true
 ---
 
-* sql 索引基本命令
+## sql 索引基本命令
 ```sql
     # 查看表描述
     desc `user`

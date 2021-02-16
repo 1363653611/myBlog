@@ -2,9 +2,9 @@
 title: 02 Lunix 遇到问题总结
 date: 2019-12-09 15:14:10
 tags:
- - LUNIX
+ - LINUX
 categories:
- - LUNIX
+ - LINUX
 topdeclare: true
 reward: true
 ---

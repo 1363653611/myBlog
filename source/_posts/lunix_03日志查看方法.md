@@ -1,22 +1,22 @@
 ---
-title: 03 LUNIX查看日志方法
+title: 03 LINUX查看日志方法
 date: 2020-01-14 15:14:10
 tags:
- - LUNIX
+ - LINUX
 categories:
- - LUNIX
+ - LINUX
 topdeclare: true
 reward: true
 ---
 ## 查看日志
 ### 常规命令:
-```LUNIX
+```LINUX
 cat service.log
 tail -f service.log
 vim serivice.log
 ```
 - vim 操作文件
- ```lunix
+ ```LINUX
   - 打开文件
   vim filename
   - 按G跳转到文件末尾
@@ -41,7 +41,7 @@ vim serivice.log
 
 ## 查进程和端口
 - 常用命令:
-```lunix
+```LINUX
 ps -ef
 ps aux
 ```
