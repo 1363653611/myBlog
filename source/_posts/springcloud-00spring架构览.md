@@ -2,9 +2,9 @@
 title: springcloud 整体架构概览
 date: 2021-01-01 13:14:10
 tags:
-  - springCloud
+  - SpringCloud
 categories:
-  - springCloud
+  - SpringCloud
 #top: 1
 topdeclare: false
 reward: true
