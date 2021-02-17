@@ -2,9 +2,9 @@
 title: Spring Cloud Gateway + Oauth2 实现统一认证和鉴权！
 date: 2021-01-20 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -19,8 +19,8 @@ reward: true
 
 相关知识：
 
-- [Spring Cloud Gateway：新一代API网关服务](./springcloud-12gateway网关.md)
-- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](./springcloud17-Ali-nacos.md)
+- [Spring Cloud Gateway：新一代API网关服务](/zbcn.github.io/assets/postImg/springcloud/springcloud-12gateway网关.md)
+- [Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用](/zbcn.github.io/assets/postImg/springcloud/springcloud17-Ali-nacos.md)
 - [听说你的JWT库用起来特别扭，推荐这款贼好用的！](https://mp.weixin.qq.com/s/Jo3PZoa7nL99c8UCxPiTTA)
 
 <!--more-->
@@ -650,7 +650,7 @@ public class UserController {
 
 - 使用密码模式获取JWT令牌，访问地址：http://localhost:9201/auth/oauth/token。**注意请求方式：post**
 
-![image-20201224165440518](/zbcn.github.io/assets/postImg/springCloud/springcloud20-微服务架构最终解决方案/image-20201224165440518.png)
+![image-20201224165440518](/zbcn.github.io/assets/postImg/springcloud/springcloud20-微服务架构最终解决方案/image-20201224165440518.png)
 
 - 使用获取到的JWT令牌访问需要权限的接口，访问地址：http://localhost:9201/api/hello
 
@@ -660,11 +660,11 @@ Authorization: Bearer xxxxxxxxxxxx
 
 
 
-![image-20201224181842849](/zbcn.github.io/assets/postImg/springCloud/springcloud20-微服务架构最终解决方案/image-20201224181842849.png)
+![image-20201224181842849](/zbcn.github.io/assets/postImg/springcloud/springcloud20-微服务架构最终解决方案/image-20201224181842849.png)
 
 - 使用获取到的JWT令牌访问获取当前登录用户信息的接口，访问地址：http://localhost:9201/api/user/currentUser
 
-![image-20201224182309169](/zbcn.github.io/assets/postImg/springCloud/springcloud20-微服务架构最终解决方案/image-20201224182309169.png)
+![image-20201224182309169](/zbcn.github.io/assets/postImg/springcloud/springcloud20-微服务架构最终解决方案/image-20201224182309169.png)
 
 - 当JWT令牌过期时，使用refresh_token获取新的JWT令牌，访问地址：http://localhost:9201/auth/oauth/token
 
@@ -679,7 +679,7 @@ client_secret:123456
 refresh_token:eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbImFsbCJdLCJhdGkiOiIyOTJiNzhmZS05Njk5LTQxOWMtYjJiYy1mNWE0ZTU0MWM4MjciLCJpZCI6MSwiZXhwIjoxNjA4ODkxMzYwLCJhdXRob3JpdGllcyI6WyJBRE1JTiJdLCJqdGkiOiIyYzhjYzYyOS02Njc2LTRmNGUtOGExYy0yMjdhZmM1MWE5YjIiLCJjbGllbnRfaWQiOiJjbGllbnQtYXBwIn0.kMDRSxX7L50sxncZIk-uezin2QlNScdO6LE8FPULXH0ceynEnHTf4AWIflK8CLVK6SSRd6dEdP_Q2ZjWJS2dldfQwfP71ajOKJKwTMnzIFZsW-RExQLqaysXH1RUv5-gOLHiV8F5YYyFVRl45qBT8gPo8Hsxt72ZLl-wdGyQ0gGa5s8SIuYO3UxgzZ6OFKryPolWuHdM6LeXdis3KyoCzu2hno6Pm4-fg8p1JmU9ddsXw3F5iKz2z5u5YkoHgBT-g2us1bVS3hgEpqfmoYQ5c7oOG3SDSUSvNSQzZZro1fsHN1fLyLv1ZM0wbzCOBxkXMwoQD9TGj6FgvJRm_n-kyw
 ```
 
-![image-20201224183004014](/zbcn.github.io/assets/postImg/springCloud/springcloud20-微服务架构最终解决方案/image-20201224183004014.png)
+![image-20201224183004014](/zbcn.github.io/assets/postImg/springcloud/springcloud20-微服务架构最终解决方案/image-20201224183004014.png)
 
 - 使用没有访问权限的`test`账号登录，访问接口时会返回如下信息，访问地址：http://localhost:9201/api/hello
 

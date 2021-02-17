@@ -2,9 +2,9 @@
 title: Spring Cloud Security：Oauth2结合JWT使用
 date: 2021-01-15 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -60,7 +60,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzI2ODI4MzEsInVzZXJfbmFtZSI6Inp
 
 - 可以在该网站上获得解析结果：https://jwt.io/
 
-![image-20201215193219755](/zbcn.github.io/assets/postImg/springCloud/springcloud15-sc/image-20201215193219755.png)
+![image-20201215193219755](/zbcn.github.io/assets/postImg/springcloud/springcloud15-sc/image-20201215193219755.png)
 
 # 创建oauth2-jwt-server模块
 
@@ -143,11 +143,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 - 运行项目后使用密码模式来获取令牌，访问如下地址：http://localhost:9401/oauth/token
 
-![image-20201216092734785](/zbcn.github.io/assets/postImg/springCloud/springcloud15-sc/image-20201216092734785.png)
+![image-20201216092734785](/zbcn.github.io/assets/postImg/springcloud/springcloud15-sc/image-20201216092734785.png)
 
 - 进行获取令牌操作，可以发现令牌已经被存储到Redis中。
 
-![image-20201216093007189](/zbcn.github.io/assets/postImg/springCloud/springcloud15-sc/image-20201216093007189.png)
+![image-20201216093007189](/zbcn.github.io/assets/postImg/springcloud/springcloud15-sc/image-20201216093007189.png)
 
 ## 使用JWT存储令牌
 
@@ -213,7 +213,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 - 运行项目后使用密码模式来获取令牌，访问如下地址：http://localhost:9401/oauth/token
 
-![image-20201216094709226](/zbcn.github.io/assets/postImg/springCloud/springcloud15-sc/image-20201216094709226.png)
+![image-20201216094709226](/zbcn.github.io/assets/postImg/springcloud/springcloud15-sc/image-20201216094709226.png)
 
 - 发现获取到的令牌已经变成了JWT令牌，将access_token拿到https://jwt.io/ 网站上去解析下可以获得其中内容。
 
@@ -389,7 +389,7 @@ public class UserController {
 
 - 将令牌放入`Authorization`头中，访问如下地址获取信息：http://localhost:9401/user/getCurrentUser
 
-![image-20201216140919273](/zbcn.github.io/assets/postImg/springCloud/springcloud15-oauth2结合jwt/image-20201216140919273.png)
+![image-20201216140919273](/zbcn.github.io/assets/postImg/springcloud/springcloud15-oauth2结合jwt/image-20201216140919273.png)
 
 问题：401Unauthorized 踩坑：请求后返回：
 
@@ -422,7 +422,7 @@ public JwtTokenEnhancer jwtTokenEnhancer() {
 
 在运行 DefaultTokenServices# loadAuthentication(String accessTokenValue) 方法时，默认使用了 redisTokenStore 。报错
 
-![image-20201216141717890](/zbcn.github.io/assets/postImg/springCloud/springcloud15-oauth2结合jwt/image-20201216141717890.png)
+![image-20201216141717890](/zbcn.github.io/assets/postImg/springcloud/springcloud15-oauth2结合jwt/image-20201216141717890.png)
 
 解决方案：
 
@@ -498,7 +498,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 - 使用刷新令牌模式来获取新的令牌，访问如下地址：http://localhost:9401/oauth/token
 
-  ![image-20201216113213632](/zbcn.github.io/assets/postImg/springCloud/springcloud15-oauth2结合jwt/image-20201216113213632.png)
+  ![image-20201216113213632](/zbcn.github.io/assets/postImg/springcloud/springcloud15-oauth2结合jwt/image-20201216113213632.png)
 
 # 使用到的模块
 

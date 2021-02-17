@@ -2,9 +2,9 @@
 title: Spring-cloud-Ribbon
 date: 2021-01-03 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -354,7 +354,7 @@ public class UserRibbonController {
 - 启动user-service于8201端口；
 - 启动另一个user-service于8202端口，可以通过修改IDEA中的SpringBoot的启动配置实现：
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-03Ribbon/springcloud_ribbon_01.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-03Ribbon/springcloud_ribbon_01.png)
 
 - 此时运行中的服务
 

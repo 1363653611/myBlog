@@ -2,9 +2,9 @@
 title: zuul api 网关
 date: 2021-01-07 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -171,7 +171,7 @@ Zuul中有以下几种典型的过滤器类型。
 ## 过滤器的生命周期
 - 下图描述了一个HTTP请求到达API网关后，如何在各种不同类型的过滤器中流转的过程。
 
-![image-20201205203953087](/zbcn.github.io/assets/postImg/springCloud/springcloud-07ZUUL 集成/image-20201205203953087.png)
+![image-20201205203953087](/zbcn.github.io/assets/postImg/springcloud/springcloud-07ZUUL 集成/image-20201205203953087.png)
 
 ## 自定义过滤器
 

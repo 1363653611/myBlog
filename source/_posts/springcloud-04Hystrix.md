@@ -1,15 +1,15 @@
 ---
-title: SpringCloud Hystrix 容器容错保护
+title: springcloud Hystrix 容器容错保护
 date: 2021-01-04 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
 
-# SpringCloud Hystrix 容器容错保护
+# springcloud Hystrix 容器容错保护
 
 Spring Cloud Hystrix 是Spring Cloud Netflix 子项目的核心组件之一，具有服务容错及线程隔离等一系列服务保护功能，本文将对其用法进行详细介绍。
 
@@ -335,7 +335,7 @@ public CommonResult testCollapser() throws ExecutionException, InterruptedExcept
 ```
 
 - 访问接口测试http://localhost:8401/user/testCollapser，由于我们设置了100毫秒进行一次请求合并，前两次被合并，最后一次自己单独合并了。
-- ![image-20201208101756939](/zbcn.github.io/assets/postImg/springCloud/springcloud-04Hystrix/image-20201208101756939.png)
+- ![image-20201208101756939](/zbcn.github.io/assets/postImg/springcloud/springcloud-04Hystrix/image-20201208101756939.png)
 
 # Hystrix的常用配置
 

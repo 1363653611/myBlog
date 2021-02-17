@@ -2,9 +2,9 @@
 title: Spring Boot Admin：微服务应用监控
 date: 2021-01-13 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -115,28 +115,28 @@ logging:
 
 - 访问如下地址打开Spring Boot Admin的主页：http://localhost:9301
 
-![image-20201215144158022](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/image-20201215144158022.png)
+![image-20201215144158022](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/image-20201215144158022.png)
 
 - 点击wallboard按钮，选择admin-client查看监控信息；
 - 监控信息概览；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_02.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_02.png)
 
 - 度量指标信息，比如JVM、Tomcat及进程信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_03.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_03.png)
 
 - 环境变量信息，比如系统属性、系统环境变量以及应用配置信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_04.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_04.png)
 
 - 查看所有创建的Bean信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_05.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_05.png)
 
 - 查看应用中的所有配置信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_06-1608014982826.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_06-1608014982826.png)
 
 - 查看日志信息，需要添加以下配置才能开启；
 
@@ -145,19 +145,19 @@ logging:
   file: admin-client.log #添加开启admin的日志监控
 ```
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_07.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_07.png)
 
 - 查看JVM信息；
 
-![image-20201215145320044](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/image-20201215145320044.png)
+![image-20201215145320044](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/image-20201215145320044.png)
 
 - 查看可以访问的Web端点；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_09.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_09.png)
 
 - 查看HTTP跟踪信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/springcloud_admin_10.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/springcloud_admin_10.png)
 
 # 结合注册中心使用
 
@@ -276,11 +276,11 @@ public class AdminClientApplication {
 
 - 查看注册中心发现服务均已注册：http://localhost:8000/
 
-  ![image-20201215162142442](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/image-20201215162142442.png)
+  ![image-20201215162142442](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/image-20201215162142442.png)
 
 - 查看Spring Boot Admin 主页发现可以看到服务信息：http://localhost:9301
 
-![image-20201215162219737](/zbcn.github.io/assets/postImg/springCloud/springcloud-13springboot Admin微服务监控/image-20201215162219737.png)
+![image-20201215162219737](/zbcn.github.io/assets/postImg/springcloud/springcloud-13springboot Admin微服务监控/image-20201215162219737.png)
 
 # 添加登录认证
 

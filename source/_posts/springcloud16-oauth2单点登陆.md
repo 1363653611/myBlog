@@ -2,9 +2,9 @@
 title: Spring Cloud Security：Oauth2实现单点登录
 date: 2021-01-16 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -138,11 +138,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
 - 访问客户端需要授权的接口http://localhost:9501/user/getCurrentUser会跳转到授权服务的登录界面；
 
-  ![img](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/spingcloud_security_15.png)
+  ![img](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/spingcloud_security_15.png)
 
 - 进行登录操作后跳转到授权页面；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/spingcloud_security_16.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/spingcloud_security_16.png)
 
 - 授权后会跳转到原来需要权限的接口地址，展示登录用户信息；
 
@@ -180,7 +180,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 - 访问客户端需要登录的接口：http://localhost:9501/user/getCurrentUser
 - 使用Oauth2认证方式获取访问令牌：
 
-![image-20201216153656879](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/image-20201216153656879.png)
+![image-20201216153656879](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/image-20201216153656879.png)
 
 配置信息
 
@@ -198,15 +198,15 @@ State:normal
 
 - 此时会跳转到认证服务器进行登录操作：
 
-![image-20201216153456974](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/image-20201216153456974.png)
+![image-20201216153456974](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/image-20201216153456974.png)
 
 - 登录成功后使用获取到的令牌：
 
-![image-20201216160926714](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/image-20201216160926714.png)
+![image-20201216160926714](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/image-20201216160926714.png)
 
 - 最后请求接口可以获取到如下信息：
 
-![image-20201216161023643](/zbcn.github.io/assets/postImg/springCloud/springcloud16-oauth2单点登陆/image-20201216161023643.png)
+![image-20201216161023643](/zbcn.github.io/assets/postImg/springcloud/springcloud16-oauth2单点登陆/image-20201216161023643.png)
 
 # oauth2-client添加权限校验
 

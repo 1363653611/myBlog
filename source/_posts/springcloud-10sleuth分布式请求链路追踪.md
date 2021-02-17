@@ -2,9 +2,9 @@
 title: Spring Cloud Sleuth：分布式请求链路跟踪
 date: 2021-01-10 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -59,7 +59,7 @@ java -jar zipkin-server-2.9.4-exec.jar
 
 - Zipkin页面访问地址：http://localhost:9411
 
-![image-20201210192310926](/zbcn.github.io/assets/postImg/springCloud/springcloud-10sleuth分布式请求链路追踪/image-20201210192310926.png)
+![image-20201210192310926](/zbcn.github.io/assets/postImg/springcloud/springcloud-10sleuth分布式请求链路追踪/image-20201210192310926.png)
 
 - 启动eureka-sever，ribbon-service，user-service：
 

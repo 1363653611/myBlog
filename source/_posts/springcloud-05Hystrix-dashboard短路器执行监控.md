@@ -2,9 +2,9 @@
 title: Hystrix Dashboard 短路器执行监控
 date: 2021-01-05 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -80,13 +80,13 @@ public class HystrixDashboardApplication {
 
 - 这次我们需要启动如下服务：eureka-server、user-service、hystrix-service、hystrix-dashboard，启动后注册中心显示如下。
 
-![image-20201208110707148](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/image-20201208110707148.png)
+![image-20201208110707148](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/image-20201208110707148.png)
 
 ## Hystrix实例监控演示
 
 - 访问Hystrix Dashboard：http://localhost:8501/hystrix
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_10.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_10.png)
 
 - 填写好信息后点击监控按钮，这里我们需要注意的是，由于我们本地不支持https，所以我们的地址需要填入的是http，否则会无法获取监控信息；
 
@@ -97,7 +97,7 @@ public class HystrixDashboardApplication {
 
   
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_11.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_11.png)
 
 - 还有一点值得注意的是，被监控的hystrix-service服务需要开启Actuator的hystrix.stream端点，配置信息如下：
 
@@ -112,7 +112,7 @@ management:
 
 - 调用几次hystrix-service的接口：http://localhost:8401/user/testCommand/1
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_12.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_12.png)
 
 ## 异常问题
 
@@ -120,13 +120,13 @@ management:
 
 现象：
 
-![image-20201208112945743](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/image-20201208112945743.png)
+![image-20201208112945743](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/image-20201208112945743.png)
 
 后台日志：` Origin parameter: http://localhost:8401/actuator/hystrix.stream is not in the allowed list of proxy host names.  If it should be allowed add it to hystrix.dashboard.proxyStreamAllowList.`
 
 问题解决方案：
 
-![image-20201208113240422](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/image-20201208113240422.png)
+![image-20201208113240422](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/image-20201208113240422.png)
 
 接下来就很简单了，HystrixDashboard工程加入配置。
 
@@ -168,7 +168,7 @@ public class CommonConfig {
 
 > 图表解读如下，需要注意的是，小球代表该实例健康状态及流量情况，颜色越显眼，表示实例越不健康，小球越大，表示实例流量越大。曲线表示Hystrix实例的实时流量变化。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_13.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard实例监控/springcloud_hystrix_13.png)
 
 ## 使用到的模块
 
@@ -250,7 +250,7 @@ public class TurbineServiceApplication {
 
 启动方式 是： 在program arguements栏添加: `--spring.config.location=classpath:application-replica1.yml`
 
-![image-20201208140108725](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard短路器执行监控/image-20201208140108725.png)
+![image-20201208140108725](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard短路器执行监控/image-20201208140108725.png)
 
 参考：https://www.cnblogs.com/lyp-make/p/13353321.html
 
@@ -266,11 +266,11 @@ turbine-service
 
 
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard短路器执行监控/springcloud_hystrix_15.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard短路器执行监控/springcloud_hystrix_15.png)
 
 - 调用几次hystrix-service的接口：http://localhost:8401/user/testCommand/1以及http://localhost:8402/user/testCommand/1
 
-![image-20201208141543851](/zbcn.github.io/assets/postImg/springCloud/springcloud-05Hystrix-dashboard短路器执行监控/image-20201208141543851.png)
+![image-20201208141543851](/zbcn.github.io/assets/postImg/springcloud/springcloud-05Hystrix-dashboard短路器执行监控/image-20201208141543851.png)
 
 - 可以看到我们的Hystrix实例数量变成了两个。
 

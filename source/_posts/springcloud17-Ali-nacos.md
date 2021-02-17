@@ -2,9 +2,9 @@
 title: Spring Cloud Alibaba：Nacos 作为注册中心和配置中心使用
 date: 2021-01-17 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -34,7 +34,7 @@ Nacos 具有如下特性:
 - 配置`JAVA_HOME`环境变量，不配置会导致无法运行Nacos `JAVA_HOME=D:\developer\env\Java\jdk1.8.0_91`；
 - 解压安装包，直接运行`bin`目录下的`startup.cmd  -m standalone`；
 - 运行成功后，访问`http://localhost:8848/nacos`可以查看Nacos的主页，默认账号密码都是nacos。
-- ![image-20201216185454309](/zbcn.github.io/assets/postImg/springCloud/springcloud17-Ali-nacos/image-20201216185454309.png)
+- ![image-20201216185454309](/zbcn.github.io/assets/postImg/springcloud/springcloud17-Ali-nacos/image-20201216185454309.png)
 
 ## 创建应用注册到Nacos
 
@@ -88,7 +88,7 @@ management:
 
 - 运行两个nacos-user-service和一个nacos-ribbon-service，在Nacos页面上可以看到如下信息：
 
-![image-20201216191651589](/zbcn.github.io/assets/postImg/springCloud/springcloud17-Ali-nacos/image-20201216191651589.png)
+![image-20201216191651589](/zbcn.github.io/assets/postImg/springcloud/springcloud17-Ali-nacos/image-20201216191651589.png)
 
 ## 负载均衡功能
 
@@ -181,7 +181,7 @@ config:
 
 - 填写配置示意图
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud17-Ali-nacos/spingcloud_nacos_03.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud17-Ali-nacos/spingcloud_nacos_03.png)
 
 - 启动nacos-config-client，调用接口查看配置信息：http://localhost:9101/nacos/configInfo
 

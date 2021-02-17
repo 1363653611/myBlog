@@ -1,15 +1,15 @@
 ---
-title: Springcloud eureka 服务注册与发现
+title: springcloud eureka 服务注册与发现
 date: 2021-01-02 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
 
-# Springcloud eureka 服务注册与发现
+# springcloud eureka 服务注册与发现
 
 
 
@@ -27,17 +27,17 @@ Spring Cloud Eureka是Spring Cloud Netflix 子项目的核心组件之一，主�
 
 
 
-## 使用 idea 来创建SpringCloud 应用
+## 使用 idea 来创建springcloud 应用
 
 - 创建一个eureka-server模块，并使用Spring Initializer初始化一个SpringBoot项目
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_01.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_01.png)
 
 - 填写应用信息
 
-- 选择你需要的SpringCloud组件进行创建
+- 选择你需要的springcloud组件进行创建
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_03.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_03.png)
 
 - 创建完成后会发现pom.xml文件中已经有了eureka-server的依赖
 
@@ -186,15 +186,15 @@ eureka:
 
 从原启动配置中复制一个出来
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_09.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_09.png)
 
 配置启动的配置文件
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_10.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_10.png)
 
 - 启动两个eureka-server，访问其中一个注册中心http://replica1:8002/发现另一个已经成为其备份
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_11.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_11.png)
 
 - 修改Eureka-client，让其连接到集群
 
@@ -274,7 +274,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 ## 运行Eureka-Security-Server ，访问 http://localhost:8084 发现需要登录
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-02eureka/springcloud_eureka_13.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-02eureka/springcloud_eureka_13.png)
 
 ## eureka-client注册到有登录认证的注册中心
 

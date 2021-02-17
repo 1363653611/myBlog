@@ -3,9 +3,9 @@
 title: Spring Cloud Alibaba：Ali-Seata
 date: 2021-01-19 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -20,7 +20,7 @@ Seata是Alibaba开源的一款分布式事务解决方案，致力于提供高�
 
 单体应用中，一个业务操作需要调用三个模块完成，此时数据的一致性由本地事务来保证。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_05.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/springcloud_seata_05.png)
 
 <!--more-->
 
@@ -28,7 +28,7 @@ Seata是Alibaba开源的一款分布式事务解决方案，致力于提供高�
 
 随着业务需求的变化，单体应用被拆分成微服务应用，原来的三个模块被拆分成三个独立的应用，分别使用独立的数据源，业务操作需要调用三个服务来完成。此时每个服务内部的数据一致性由本地事务来保证，但是全局的数据一致性问题没法保证。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_06.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/springcloud_seata_06.png)
 
 ## 小结
 
@@ -44,7 +44,7 @@ Seata 是一款开源的分布式事务解决方案，致力于提供高性能�
 
 我们可以把一个分布式事务理解成一个包含了若干分支事务的全局事务，全局事务的职责是协调其下管辖的分支事务达成一致，要么一起成功提交，要么一起失败回滚。此外，通常分支事务本身就是一个满足ACID的本地事务。这是我们对分布式事务结构的基本认识，与 XA 是一致的。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_07.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/springcloud_seata_07.png)
 
 ## 协议分布式事务处理过程的三个组件
 
@@ -52,7 +52,7 @@ Seata 是一款开源的分布式事务解决方案，致力于提供高性能�
 - Transaction Manager (TM)： 控制全局事务的边界，负责开启一个全局事务，并最终发起全局提交或全局回滚的决议；
 - Resource Manager (RM)： 控制分支事务，负责分支注册、状态汇报，并接收事务协调器的指令，驱动分支（本地）事务的提交和回滚。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_08.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/springcloud_seata_08.png)
 
 ## 一个典型的分布式事务过程
 
@@ -62,7 +62,7 @@ Seata 是一款开源的分布式事务解决方案，致力于提供高性能�
 - TM 向 TC 发起针对 XID 的全局提交或回滚决议；
 - TC 调度 XID 下管辖的全部分支事务完成提交或回滚请求。
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/springcloud_seata_09.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/springcloud_seata_09.png)
 
 
 
@@ -275,7 +275,7 @@ service {
    3. 我们使用python 来导入： `python nacos-config.py localhost:8848`
    4. 导入成功后在配置列表可看到相关信息
 
-   ![image-20201222164020180](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/image-20201222164020180.png)
+   ![image-20201222164020180](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/image-20201222164020180.png)
 
    
 
@@ -350,7 +350,7 @@ INSERT INTO `seat-account`.`account` (`id`, `user_id`, `total`, `used`, `residue
 
 ## 完整数据库示意图
 
-![image-20201217164806650](/zbcn.github.io/assets/postImg/springCloud/springcloud19-Ali-Seata/image-20201217164806650.png)
+![image-20201217164806650](/zbcn.github.io/assets/postImg/springcloud/springcloud19-Ali-Seata/image-20201217164806650.png)
 
 ## 制造一个分布式事务问题
 

@@ -2,9 +2,9 @@
 title: Spring Cloud Gateway：新一代API网关服务
 date: 2021-01-12 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -489,7 +489,7 @@ spring:
 
 - 关闭user-service，调用该地址进行测试：http://localhost:9201/user/1 ，发现已经返回了服务降级的处理信息。
 
-![image-20201214113420394](/zbcn.github.io/assets/postImg/springCloud/springcloud-12gateway网关/image-20201214113420394.png)
+![image-20201214113420394](/zbcn.github.io/assets/postImg/springcloud/springcloud-12gateway网关/image-20201214113420394.png)
 
 ## RequestRateLimiter GatewayFilter
 
@@ -568,7 +568,7 @@ logging:
 
 - 多次请求该地址：http://localhost:9201/user/1 ，会返回状态码为429的错误；
 
-![image-20201214195216568](/zbcn.github.io/assets/postImg/springCloud/springcloud-12gateway网关/image-20201214195216568.png)
+![image-20201214195216568](/zbcn.github.io/assets/postImg/springcloud/springcloud-12gateway网关/image-20201214195216568.png)
 
 ## Retry GatewayFilter
 

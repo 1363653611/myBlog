@@ -2,9 +2,9 @@
 title: Spring Cloud Config：外部集中化配置管理
 date: 2021-01-08 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -152,10 +152,10 @@ public class ConfigServerApplication {
 
 - 访问http://localhost:8901/master/config-dev来获取master分支上dev环境的配置信息；
 
-![image-20201208191544134](/zbcn.github.io/assets/postImg/springCloud/springcloud-08config集中配置管理/image-20201208191544134.png)
+![image-20201208191544134](/zbcn.github.io/assets/postImg/springcloud/springcloud-08config集中配置管理/image-20201208191544134.png)
 
 - 访问http://localhost:8901/master/config-dev.yml来获取master分支上dev环境的配置文件信息，对比上面信息，可以看出配置信息和配置文件信息并不是同一个概念；
-- ![image-20201208191611153](/zbcn.github.io/assets/postImg/springCloud/springcloud-08config集中配置管理/image-20201208191611153.png)
+- ![image-20201208191611153](/zbcn.github.io/assets/postImg/springcloud/springcloud-08config集中配置管理/image-20201208191611153.png)
 
 - 访问[http://localhost:8901/master/config-test.yml](http://localhost:8901/dev/config-dev.yml)来获取master分支上test环境的配置文件信息:
 - 访问http://localhost:8901/dev/config-dev.yml来获取dev分支上dev环境的配置文件信息:
@@ -365,7 +365,7 @@ spring:
 
   `--spring.config.location=classpath:bootstrap-security.yml`
 
-![image-20201209101857577](/zbcn.github.io/assets/postImg/springCloud/springcloud-08config集中配置管理/image-20201209101857577.png)
+![image-20201209101857577](/zbcn.github.io/assets/postImg/springcloud/springcloud-08config集中配置管理/image-20201209101857577.png)
 
 - 访问http://localhost:9102/config/configInfo 进行测试，发现可以获取到配置信息。
 

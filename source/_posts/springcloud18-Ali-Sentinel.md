@@ -2,9 +2,9 @@
 title: Spring Cloud Alibaba：Sentinel实现熔断与限流
 date: 2021-01-18 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -41,11 +41,11 @@ java -jar sentinel-dashboard-1.8.0.jar
 
 - Sentinel控制台默认运行在8080端口上，登录账号密码均为`sentinel`，通过如下地址可以进行访问：http://localhost:8080
 
-![image-20201217094603050](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217094603050.png)
+![image-20201217094603050](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217094603050.png)
 
 - Sentinel控制台可以查看单台机器的实时监控数据。
 
-![image-20201217111049366](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217111049366.png)
+![image-20201217111049366](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217111049366.png)
 
 # 创建sentinel-service模块
 
@@ -143,7 +143,7 @@ public class RateLimitController {
 - 由于Sentinel采用的懒加载规则，需要我们先访问下接口，Sentinel控制台中才会有对应服务信息，我们先访问下该接口：http://localhost:8401/rateLimit/byResource
 - 在Sentinel控制台配置流控规则，根据@SentinelResource注解的value值：
 
-![image-20201217111307819](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217111307819.png)
+![image-20201217111307819](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217111307819.png)
 
 - 快速访问上面的接口，可以发现返回了自己定义的限流处理信息：
 
@@ -162,7 +162,7 @@ public class RateLimitController {
 
 - 在Sentinel控制台配置流控规则，使用访问的URL：
 
-![image-20201217112139406](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217112139406.png)
+![image-20201217112139406](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217112139406.png)
 
 - 多次访问该接口，会返回默认的限流处理结果：http://localhost:8401/rateLimit/byUrl
 
@@ -201,7 +201,7 @@ public class CustomBlockHandler {
 
 - 在Sentinel控制台配置流控规则，使用访问的URL：
 
-![image-20201217114812120](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217114812120.png)
+![image-20201217114812120](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217114812120.png)
 
 - 访问可以产生限流规则： http://localhost:8401/rateLimit/customBlockHandler
 
@@ -439,7 +439,7 @@ public class UserFeignController {
 
 ## 原理示意图
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/spingcloud_sentinel_08.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/spingcloud_sentinel_08.png)
 
 - 首先我们直接在配置中心创建规则，配置中心将规则推送到客户端；
 - Sentinel控制台也从配置中心去获取配置信息。
@@ -501,11 +501,11 @@ spring:
 - controlBehavior：流控效果，0表示快速失败，1表示Warm Up，2表示排队等待；
 - clusterMode：是否集群。
 
-![image-20201217143428508](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217143428508.png)
+![image-20201217143428508](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217143428508.png)
 
 发现Sentinel控制台已经有了如下限流规则：
 
-![image-20201217143728874](/zbcn.github.io/assets/postImg/springCloud/springcloud18-Ali-Sentine/image-20201217143728874.png)
+![image-20201217143728874](/zbcn.github.io/assets/postImg/springcloud/springcloud18-Ali-Sentine/image-20201217143728874.png)
 
 - 快速访问测试接口： http://localhost:8401/rateLimit/byUrl，可以发现返回了限流处理信息：`Blocked by Sentinel (flow limiting)`
 

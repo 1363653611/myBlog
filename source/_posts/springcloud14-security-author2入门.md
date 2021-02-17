@@ -2,9 +2,9 @@
 title: Spring Cloud Security：Oauth2使用入门
 date: 2021-01-14 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -37,7 +37,7 @@ OAuth 2.0是用于授权的行业标准协议。OAuth 2.0为简化客户端开�
 
 ## 授权码模式
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_01.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_01.png)
 
 - (A)客户端将用户导向认证服务器；
 - (B)用户在认证服务器进行登录并授权；
@@ -47,7 +47,7 @@ OAuth 2.0是用于授权的行业标准协议。OAuth 2.0为简化客户端开�
 
 ## 密码模式
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_02.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_02.png)
 
 - (A)客户端从用户获取用户名和密码；
 - (B)客户端通过用户的用户名和密码访问认证服务器；
@@ -227,30 +227,30 @@ public class UserController {
 - 在浏览器访问该地址进行登录授权：http://localhost:9401/oauth/authorize?response_type=code&client_id=admin&redirect_uri=http://www.baidu.com&scope=all&state=normal
 - 输入账号密码进行登录操作：
 
-![image-20201215184440703](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/image-20201215184440703.png)
+![image-20201215184440703](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/image-20201215184440703.png)
 
 - 登陆后授权操作
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_04.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_04.png)
 
 - 之后会浏览器会带着授权码跳转到我们指定的路径：
 
 https://www.baidu.com/?code=xFHehO&state=normal
 
-![image-20201215185006190](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/image-20201215185006190.png)
+![image-20201215185006190](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/image-20201215185006190.png)
 
 - 使用授权码请求该地址获取访问令牌：http://localhost:9401/oauth/token
 - 使用Basic认证通过client_id和client_secret构造一个Authorization头信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_05.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_05.png)
 
 - 在body中添加以下参数信息，通过POST请求获取访问令牌；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_06.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_06.png)
 
 - 在请求头中添加访问令牌，访问需要登录认证的接口进行测试，发现已经可以成功访问：http://localhost:9401/user/getCurrentUser
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_07.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_07.png)
 
 ## 密码模式使用
 
@@ -258,11 +258,11 @@ https://www.baidu.com/?code=xFHehO&state=normal
 
 - 使用Basic认证通过client_id和client_secret构造一个Authorization头信息；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_05.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_05.png)
 
 - 在body中添加以下参数信息，通过POST请求获取访问令牌；
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud14-security-author2入门/spingcloud_security_08.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud14-security-author2入门/spingcloud_security_08.png)
 
 # 使用到的模块
 

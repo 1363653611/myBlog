@@ -2,9 +2,9 @@
 title: Spring Cloud Consul：服务治理与配置中心
 date: 2021-01-11 13:14:10
 tags:
-  - SpringCloud
+  - springCloud
 categories:
-  - SpringCloud
+  - springCloud
 topdeclare: true
 reward: true
 ---
@@ -37,7 +37,7 @@ Spring Cloud Consul 具有如下特性：
 - 查看版本号信息如下：
 - 使用开发模式启动：`consul agent -dev `
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-11consul服务治理与配置中心/springcloud_consul_02.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-11consul服务治理与配置中心/springcloud_consul_02.png)
 
 - 通过以下地址可以访问Consul的首页：http://localhost:8500
 
@@ -98,7 +98,7 @@ spring:
 
 - 运行两个consul-user-service和一个consul-ribbon-service，在Consul页面上可以看到如下信息：
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-11consul服务治理与配置中心/springcloud_consul_03.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-11consul服务治理与配置中心/springcloud_consul_03.png)
 
 # 负载均衡功能
 
@@ -189,7 +189,7 @@ config:
 
 - 存储信息截图如下：
 
-![img](/zbcn.github.io/assets/postImg/springCloud/springcloud-11consul服务治理与配置中心/springcloud_consul_04.png)
+![img](/zbcn.github.io/assets/postImg/springcloud/springcloud-11consul服务治理与配置中心/springcloud_consul_04.png)
 
 - 启动consul-config-client，调用接口查看配置信息：http://localhost:9101/consul/configInfo
 
