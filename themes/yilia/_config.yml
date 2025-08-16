@@ -12,7 +12,7 @@ subnav:
   github: "https://github.com/1363653611"
   weibo: "https://weibo.com/u/2151025583"
   zhihu: "https://www.zhihu.com/people/li-kun-52-5/activities"
-  rss: "#"
+  #rss: "#"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -76,7 +76,7 @@ favicon: /zbcn.github.io/assets/img/favicon.ico
 avatar: /zbcn.github.io/assets/img/head.jpg
 
 #是否开启分享
-share_jia: true
+share_jia: false
 
 #评论：1、多说；2、网易云跟帖；3、畅言；4、Disqus；5、Gitment
 #不需要使用某项，直接设置值为false，或注释掉
@@ -101,6 +101,16 @@ gitment_repo: ''          #存储评论的 repo
 gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
+ 
+# # valine配置
+valine: 
+ appid: '5QqlEu4QX9clzanwHl7kr47a-gzGzoHsz' #Leancloud应用的appId
+ appkey: 'S0WJP12DXHTkSJty3f2QtUdz' #Leancloud应用的appKey
+ verify: false #验证码，verify和notify这两个最好就别动了
+ notify: false #评论回复提醒
+ avatar: mm #评论列表头像样式：''/mm/identicon/monsterid/wavatar/retro/hide
+ placeholder: Just go go #评论框占位符
+
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
@@ -126,13 +136,13 @@ smart_menu:
 
 friends:
   blog配置说明: http://dongshuyan.com/2019/05/24/hexo%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/
-  友情链接2: http://localhost:4000/
+  友情链接2: https://github.com/hcsp
   友情链接3: http://localhost:4000/
   友情链接4: http://localhost:4000/
   友情链接5: http://localhost:4000/
   友情链接6: http://localhost:4000/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme: 身在井隅<br><br> 心想星光<br><br> 眼里有诗<br><br>自在远方
 
 #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明
 #当前应用的版权协议地址。
